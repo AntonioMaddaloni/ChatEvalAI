@@ -48,13 +48,20 @@ if "faireval" in args_data_path:
         # reassign the text to agents, and set final_prompt to null for debate at first round
         for agent_id in range(len(agentverse.agents)):
             agentverse.agents[agent_id].source_text = ins["question"]
+            agentverse.agents[agent_id].source_fact = ins["fact"]
 
             if args.reverse_input:
-                agentverse.agents[agent_id].compared_text_one = ins["response"]["vicuna"]
-                agentverse.agents[agent_id].compared_text_two = ins["response"]["gpt35"]
+                agentverse.agents[agent_id].compared_text_one = ins["response"]["Original Ground Truth"]
+                agentverse.agents[agent_id].compared_text_two = ins["response"]["KV-MemNN"]
+                agentverse.agents[agent_id].compared_text_three = ins["response"]["Seq2Seq"]
+                agentverse.agents[agent_id].compared_text_four = ins["response"]["Language Model"]
+                agentverse.agents[agent_id].compared_text_five = ins["response"]["New Human Generated"]
             else:
-                agentverse.agents[agent_id].compared_text_one = ins["response"]["gpt35"]
-                agentverse.agents[agent_id].compared_text_two = ins["response"]["vicuna"]
+                agentverse.agents[agent_id].compared_text_one = ins["response"]["Original Ground Truth"]
+                agentverse.agents[agent_id].compared_text_two = ins["response"]["KV-MemNN"]
+                agentverse.agents[agent_id].compared_text_three = ins["response"]["Seq2Seq"]
+                agentverse.agents[agent_id].compared_text_four = ins["response"]["Language Model"]
+                agentverse.agents[agent_id].compared_text_five = ins["response"]["New Human Generated"]
 
             agentverse.agents[agent_id].final_prompt = ""
 
@@ -63,8 +70,11 @@ if "faireval" in args_data_path:
         evaluation = get_evaluation(setting="every_agent", messages=agentverse.agents[0].memory.messages, agent_nums=len(agentverse.agents))
 
         pair_comparison_output.append({"question": ins["question"],
-                                       "response": {"gpt35": ins["response"]["gpt35"],
-                                                    "vicuna": ins["response"]["vicuna"]},
+                                       "response": {"Original Ground Truth": ins["response"]["Original Ground Truth"],
+                                                    "V-MemNN": ins["response"]["KV-MemNN"],
+                                                    "Seq2Seq": ins["response"]["Seq2Seq"],
+                                                    "Language Model": ins["response"]["Language Model"],
+                                                    "New Human Generated": ins["response"]["New Human Generated"]},
                                        "evaluation": evaluation})
 
         os.makedirs(args_output_dir, exist_ok=True)

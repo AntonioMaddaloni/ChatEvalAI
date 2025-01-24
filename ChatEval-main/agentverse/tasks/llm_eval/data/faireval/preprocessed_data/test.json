@@ -1,10 +1,26 @@
 [
     {
         "question_id": 1,
-        "question": "What are the primary factors that influence consumer behavior?",
+        "question": "hi there how are you doing this evening ?\nhi , sitting here with my three dogs watching the olympics !\nnice i do not want to go back to work i am a waitress\ni love being in a polyamorous open relationship !\niol well i wish i was brave enough to do that\nmy father was a salesman , helps my dog walking business now\nthat is nice i've a motorbike don't know what car to get for winter\nvery very cool . sounds fun\nyes i had them put red with blue stripes to be shinny for when racing\nso is my dog , wow so cool\nso what do you do in your spare time ?\nlead singer for a band , music teacher\nwow nice are you really good ?\nmillions of plays on soundcloud\nreally would you share or are you shy\n",
+        "fact": "your persona: i also have a dog walking business.\nyour persona: i've three dogs.\nyour persona: my father was a door to door salesman.\nyour persona: i am in an open polyamorous relationship.\nyour persona: i like to watch the olympics.\n",
         "response": {
-            "gpt35": "There are several primary factors that influence consumer behavior, including:\n\n1. Personal factors - These include individual characteristics such as age, gender, income, education, personality, and lifestyle.\n\n2. Psychological factors - These include the consumer's perception of the product or service, motives, attitudes, beliefs, and values.\n\n3. Social factors - These include the consumer's family, friends, social class, culture, and reference groups.\n\n4. Situational factors - These include the physical environment, time, and mood of the consumer.\n\n5. Marketing mix factors - These include product, price, promotion, and distribution, and how they affect the consumer's decision-making process.",
-            "vicuna": "There are several primary factors that can influence consumer behavior, including:\n\n1. Personal factors: These include individual characteristics such as age, gender, education, income, personality, and values.\n2. Psychological factors: These include emotional, cognitive, and perceptual factors that can influence how a consumer perceives and processes information about products and services.\n3. Social factors: These include cultural, social, and environmental factors that can affect how consumers view and use products and services.\n4. Economic factors: These include factors such as the price of a product or service, the availability of alternative products or services, and the consumer's purchasing power.\n5. Marketing factors: These include the way a product or service is marketed, including advertising, packaging, and distribution.\n6. Product and service factors: These include the quality, features, and benefits of a product or service, as well as its design, performance, and warranty.\n\nUnderstanding these factors can help businesses and organizations develop effective marketing strategies and tailor their products and services to meet the needs and preferences of their target audience."
+            "Original Ground Truth": "ha ha i'm so shy\n",
+            "KV-MemNN": "i know what you mean spend most nights cuddling my dog and star watching\n",
+            "Seq2Seq": "i am a little shy but i am a little shy\n",
+            "Language Model": "i am not . i am a student .\n",
+            "New Human Generated": "i only feel comfortable sharing my music with my dogs !\n"
+        }
+    },
+    {
+        "question_id": 2,
+        "question": "hello there , how are you ?\ni am well and you ? in honor of aim i'll ask a s l\n45 m chicago in town . just trying to stay away from the bars\ni am 37 f tampa . i like my walks on the beach and cheeseburgers in paradise .\nfunny thing is i came from farm life\ni was named after a horse . my boyfriend likes to may nay sounds at me .\nsounds like the crazy medicine i take\njust do not mix with alcohol or can get crazy around here .\ni used to be an alcoholic so no can do\ni tend to stick to my water only . soda is worse !\nthat's what everyone should strive for\nas long as i have my french fries !\nwell everyone can cheat once in a while\nof course . now all of this has made me hungry .\nyou can go for some grub\n",
+        "fact": "your persona: i like to take walks.\nyour persona: i don't drink soda.\nyour persona: i've a boyfriend.\nyour persona: i like to eat hamburgers and french fries.\n",
+        "response": {
+            "Original Ground Truth": "chicago has some great places to eat too .\n",
+            "KV-MemNN": "i will win , i am telling you . then i will drive my sx into the stars .\n",
+            "Seq2Seq": "i will try that . i am a bit of a tea person .\n",
+            "Language Model": "i do not know what to say .\n",
+            "New Human Generated": "maybe i'll take go for a walk and get a burger after .\n"
         }
     }
 ]

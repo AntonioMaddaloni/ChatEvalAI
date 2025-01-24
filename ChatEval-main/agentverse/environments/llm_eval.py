@@ -17,7 +17,7 @@ class LLMEvalEnvironment(BasicEnvironment):
     An environment for prisoner dilema.
     """
 
-    async def step(self) -> List[Message]:
+    def step(self) -> List[Message]:
         """Run one step of the environment"""
 
         # Get the next agent index
@@ -27,9 +27,7 @@ class LLMEvalEnvironment(BasicEnvironment):
         env_descriptions = self.rule.get_env_description(self)
 
         # Generate the next message
-        messages = await asyncio.gather(
-            *[self.agents[i].astep(self, env_descriptions[i]) for i in agent_ids]
-        )
+        messages = [self.agents[i].step(self,env_descriptions[i]) for i in agent_ids]
 
         # Some rules will select certain messages from all the messages
         selected_messages = self.rule.select_message(self, messages)

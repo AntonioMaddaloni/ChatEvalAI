@@ -53,7 +53,7 @@ class AgentVerse:
         """Run the environment from scratch until it is done."""
         self.environment.reset()
         while not self.environment.is_done():
-            asyncio.run(self.environment.step())
+            self.environment.step()
 
     def reset(self):
         self.environment.reset()

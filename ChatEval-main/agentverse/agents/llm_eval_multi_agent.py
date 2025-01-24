@@ -20,6 +20,7 @@ if TYPE_CHECKING:
 class LLMEvalAgent(BaseAgent):
 
     source_text: str = ""
+    source_fact: str = ""
     # for direct score
     reference_text: str = ""
     generated_text: str = ""
@@ -27,24 +28,55 @@ class LLMEvalAgent(BaseAgent):
     # for pair comparison
     compared_text_one: str = ""
     compared_text_two: str = ""
+    compared_text_three: str = ""
+    compared_text_four: str = ""
+    compared_text_five: str = ""
 
     final_prompt: str = ""
     final_prompt_to_use: str = ""
 
-    def step(self, env_description: str = "") -> Message:
+    def step(self, env: BaseEnvironment = None, env_description: str = "") -> Message:
+
+        if env.cnt_turn >= env.max_turns - len(env.agents):
+            # self.final_prompt = "Now, please give your final judgement, and you must use the following format, first start with 'This is my final judgement!' and briefly give the thought on why you give this rate, then finally give the rate of the summary of the above 4 aspects." \
+            #                     "This is my final judgement!\n" \
+            #                     "Thought: (your thought)\n" \
+            #                     "Relevance:\n" \
+            #                     "Consistency:\n" \
+            #                     "Fluency:\n" \
+            #                     "Coherence:\n" \
+            self.final_prompt = self.final_prompt_to_use
+
         prompt = self._fill_prompt_template(env_description)
 
         parsed_response = None
-        for i in range(self.max_retry):
-            try:
-                response = self.llm.generate_response(prompt, self.memory.messages, self.final_prompt)
-                parsed_response = self.output_parser.parse(response)
+
+        should_break = False
+        while True:
+
+            for i in range(self.max_retry):
+                try:
+                    response = self.llm.generate_response(prompt, self.memory.messages, self.final_prompt)
+                    parsed_response = self.output_parser.parse(response, env.cnt_turn, env.max_turns, len(env.agents))
+                    should_break = True
+                    break
+                except (KeyboardInterrupt, bdb.BdbQuit):
+                    raise
+                except Exception as e:
+                    if isinstance(e, RateLimitError):
+                        logging.error(e)
+                        logging.warning("Retrying Until rate limit error disappear...")
+                        break
+                    else:
+                        logging.error(e)
+                        logging.warning("Retrying...")
+                        continue
+            else:
+                logging.error(f"After {self.max_retry} failed try, end the loop")
                 break
-            except KeyboardInterrupt:
-                raise
-            except Exception as e:
-                logging.error(e)
-                logging.warning("Retrying...")
+            if should_break:
+                break
+            else:
                 continue
 
         if parsed_response is None:
@@ -138,10 +170,14 @@ class LLMEvalAgent(BaseAgent):
             "env_description": env_description,
             "role_description": self.role_description,
             "source_text": self.source_text,
+            "source_fact": self.source_fact,
             "reference_text": self.reference_text,
             "generated_text": self.generated_text,
             "compared_text_one": self.compared_text_one,
             "compared_text_two": self.compared_text_two,
+            "compared_text_three": self.compared_text_three,
+            "compared_text_four": self.compared_text_four,
+            "compared_text_five": self.compared_text_five,
             "final_prompt": self.final_prompt,
             # "chat_history": self.memory.to_string(add_sender_prefix=True),
         }

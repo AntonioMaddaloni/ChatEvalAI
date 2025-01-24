@@ -20,8 +20,11 @@ class LLMEvalParser(OutputParser):
 
         if cnt_turn >= max_turns - agent_nums:
             # if not cleaned_output[0].startswith("Answer") :
-            if not (cleaned_output[-2].startswith("The score of Assistant 1:") and \
-                    cleaned_output[-1].startswith("The score of Assistant 2:")):
+            if not (cleaned_output[-5].startswith("The score of Assistant 1:") and \
+                    cleaned_output[-4].startswith("The score of Assistant 2:") and \
+                    cleaned_output[-3].startswith("The score of Assistant 3:") and \
+                    cleaned_output[-2].startswith("The score of Assistant 4:") and \
+                    cleaned_output[-1].startswith("The score of Assistant 5:")):
                 raise OutputParserError(text)
 
         return AgentFinish({"output": text}, text)

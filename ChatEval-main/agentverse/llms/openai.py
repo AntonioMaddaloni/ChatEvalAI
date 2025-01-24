@@ -16,11 +16,10 @@ logger = logging.getLogger(__name__)
 
 try:
     import openai
-    from openai import OpenAI, AsyncOpenAI
+    from openai import OpenAI, AsyncOpenAI, AzureOpenAI, AsyncAzureOpenAI
     
-    client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"),base_url=os.environ.get("OPENAI_BASE_URL"))
-    aclient = AsyncOpenAI(api_key=os.environ.get("OPENAI_API_KEY"),base_url=os.environ.get("OPENAI_BASE_URL"))
-    print(client.models.list(),"entra")
+    client = OpenAI(api_key="g4a-96vBKjQ1Zhwesf9U5r7OSPgRv1miGsykNQm", base_url="https://api.gpt4-all.xyz/v1")
+    aclient = AsyncOpenAI(api_key="g4a-96vBKjQ1Zhwesf9U5r7OSPgRv1miGsykNQm", base_url="https://api.gpt4-all.xyz/v1")
     from openai import OpenAIError
 except ImportError:
     is_openai_available = False
@@ -28,7 +27,6 @@ except ImportError:
 else:
 
     if openai.api_key is None:
-        print(openai.api_key,"lol")
         logging.warning(
             "OpenAI API key is not set. Please set the environment variable OPENAI_API_KEY"
         )
@@ -117,10 +115,8 @@ class OpenAIChat(BaseChatModel):
             if openai.api_type == "azure":
                 response = client.chat.completions.create(engine="gpt-4-6", messages=messages, **self.args.dict())
             else:
-
-
-
                 response = client.chat.completions.create(messages=messages, **self.args.dict())
+                print(response.choices[0].message.content)
         except (OpenAIError, KeyboardInterrupt) as error:
             raise
         return LLMResult(
@@ -136,8 +132,7 @@ class OpenAIChat(BaseChatModel):
             if openai.api_type == "azure":
                 response = await aclient.chat.completions.create(engine="gpt-4-6", messages=messages, **self.args.dict())
             else:
-
-                response = await aclient.chat.completions.create(messages=messages, **self.args.dict())
+                response = await aclient.chat.completions.create(messages=messages,model="gpt-4",stream=False)
         except (OpenAIError, KeyboardInterrupt) as error:
             raise
         return LLMResult(
