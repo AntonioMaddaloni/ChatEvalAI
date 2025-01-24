@@ -1,0 +1,12 @@
+Question 1:
+Kappa di Cohen: 0.1000
+Spearman: nan
+Pearson: nan
+Kendall-Tau: nan
+
+Question 2:
+Kappa di Cohen: -0.0821
+Spearman: -0.1000
+Pearson: -0.0828
+Kendall-Tau: -0.1000
+
