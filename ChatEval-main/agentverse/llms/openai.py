@@ -132,7 +132,8 @@ class OpenAIChat(BaseChatModel):
             if openai.api_type == "azure":
                 response = await aclient.chat.completions.create(engine="gpt-4-6", messages=messages, **self.args.dict())
             else:
-                response = await aclient.chat.completions.create(messages=messages,model="gpt-4",stream=False)
+                response = await aclient.chat.completions.create(messages=messages, **self.args.dict())
+                print(response.choices[0].message.content)
         except (OpenAIError, KeyboardInterrupt) as error:
             raise
         return LLMResult(

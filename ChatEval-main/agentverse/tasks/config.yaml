@@ -77,8 +77,8 @@ agents:
       memory_manipulator_type: basic
     prompt_template: *prompt
     llm:
-      model: "gpt-3.5-turbo"
-      llm_type: gpt-3.5-turbo
+      model: "gpt-4o"
+      llm_type: gpt-4
       temperature: 0
       max_tokens: 512
   -
@@ -104,8 +104,8 @@ agents:
       memory_manipulator_type: basic
     prompt_template: *prompt
     llm:
-      model: "gpt-3.5-turbo"
-      llm_type: gpt-3.5-turbo
+      model: "gpt-4o"
+      llm_type: gpt-4
       temperature: 0
       max_tokens: 512
   -
@@ -131,8 +131,8 @@ agents:
       memory_manipulator_type: basic
     prompt_template: *prompt
     llm:
-      model: "gpt-3.5-turbo"
-      llm_type: gpt-3.5-turbo
+      model: "gpt-4o"
+      llm_type: gpt-4
       temperature: 0
       max_tokens: 512
 
