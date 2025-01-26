@@ -18,8 +18,8 @@ try:
     import openai
     from openai import OpenAI, AsyncOpenAI, AzureOpenAI, AsyncAzureOpenAI
     
-    client = OpenAI(api_key="g4a-96vBKjQ1Zhwesf9U5r7OSPgRv1miGsykNQm", base_url="https://api.gpt4-all.xyz/v1")
-    aclient = AsyncOpenAI(api_key="g4a-96vBKjQ1Zhwesf9U5r7OSPgRv1miGsykNQm", base_url="https://api.gpt4-all.xyz/v1")
+    client = OpenAI(api_key="",base_url="")
+    aclient = AsyncOpenAI(api_key="",base_url="")
     from openai import OpenAIError
 except ImportError:
     is_openai_available = False

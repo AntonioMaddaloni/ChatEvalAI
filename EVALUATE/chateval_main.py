@@ -26,7 +26,7 @@ def calculate_correlations(human_scores, assistant_scores):
             model_discrete = [int(score) for score in model_v[j]]
             kappa = cohen_kappa_score(human_discrete, model_discrete)
             kappa_values.append(kappa)
-            print(human_v[j], model_v[j])
+            #print(human_v[j], model_v[j])
             # Correlazioni per ogni assistente (Spearman, Pearson, Kendall-Tau)
             spearman_corr, _ = spearmanr(human_v[j], model_v[j])
             pearson_corr, _ = pearsonr(human_v[j], model_v[j])
@@ -49,7 +49,7 @@ def calculate_correlations(human_scores, assistant_scores):
 # Dati di input
 human_scores = my_parser.parse_human_for_results('./DATASET/pc_usr_data.json')
 
-assistant_scores = my_parser.parse_model_for_results('./DATASET/output.json')
+assistant_scores = my_parser.parse_model_for_results('./DATASET/output_sequential_4.json')
 
 # Calcola le metriche
 results = calculate_correlations(human_scores, assistant_scores)

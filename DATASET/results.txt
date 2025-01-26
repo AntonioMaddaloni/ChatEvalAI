@@ -1,12 +1,360 @@
 Question 1:
-Kappa di Cohen: 0.1000
-Spearman: nan
-Pearson: nan
-Kendall-Tau: nan
+Kappa di Cohen: nan
+Spearman: -0.1000
+Pearson: 0.0187
+Kendall-Tau: -0.2000
 
 Question 2:
-Kappa di Cohen: -0.0821
+Kappa di Cohen: 0.0171
+Spearman: 0.0268
+Pearson: 0.1892
+Kendall-Tau: -0.0300
+
+Question 3:
+Kappa di Cohen: -0.1000
+Spearman: -0.0268
+Pearson: 0.2457
+Kendall-Tau: -0.0367
+
+Question 4:
+Kappa di Cohen: -0.0786
+Spearman: -0.6000
+Pearson: -0.4984
+Kendall-Tau: -0.4667
+
+Question 5:
+Kappa di Cohen: -0.0271
 Spearman: -0.1000
-Pearson: -0.0828
-Kendall-Tau: -0.1000
+Pearson: -0.1699
+Kendall-Tau: -0.2000
+
+Question 6:
+Kappa di Cohen: 0.0571
+Spearman: -0.1000
+Pearson: -0.0492
+Kendall-Tau: -0.0667
+
+Question 7:
+Kappa di Cohen: 0.1250
+Spearman: 0.5732
+Pearson: 0.5965
+Kendall-Tau: 0.4966
+
+Question 8:
+Kappa di Cohen: -0.0400
+Spearman: -0.7000
+Pearson: -0.5904
+Kendall-Tau: -0.6000
+
+Question 9:
+Kappa di Cohen: nan
+Spearman: 0.1268
+Pearson: 0.1630
+Kendall-Tau: 0.1034
+
+Question 10:
+Kappa di Cohen: 0.0571
+Spearman: -0.2000
+Pearson: -0.0498
+Kendall-Tau: -0.2000
+
+Question 11:
+Kappa di Cohen: 0.0500
+Spearman: -0.2000
+Pearson: -0.3503
+Kendall-Tau: -0.2000
+
+Question 12:
+Kappa di Cohen: 0.1000
+Spearman: -0.4000
+Pearson: -0.2575
+Kendall-Tau: -0.3333
+
+Question 13:
+Kappa di Cohen: -0.0821
+Spearman: 0.1000
+Pearson: 0.0045
+Kendall-Tau: 0.2000
+
+Question 14:
+Kappa di Cohen: -0.0964
+Spearman: -0.1268
+Pearson: -0.0942
+Kendall-Tau: -0.1034
+
+Question 15:
+Kappa di Cohen: 0.0571
+Spearman: -0.1464
+Pearson: -0.1942
+Kendall-Tau: -0.1266
+
+Question 16:
+Kappa di Cohen: -0.0571
+Spearman: -0.2000
+Pearson: -0.1734
+Kendall-Tau: -0.2000
+
+Question 17:
+Kappa di Cohen: 0.0036
+Spearman: -0.2268
+Pearson: -0.3701
+Kendall-Tau: -0.2367
+
+Question 18:
+Kappa di Cohen: -0.1250
+Spearman: 0.0268
+Pearson: -0.0621
+Kendall-Tau: -0.0300
+
+Question 19:
+Kappa di Cohen: -0.0286
+Spearman: -0.1000
+Pearson: -0.0895
+Kendall-Tau: -0.0667
+
+Question 20:
+Kappa di Cohen: 0.3886
+Spearman: -0.1268
+Pearson: -0.3746
+Kendall-Tau: -0.1034
+
+Question 21:
+Kappa di Cohen: 0.0000
+Spearman: 0.1000
+Pearson: 0.0344
+Kendall-Tau: 0.0667
+
+Question 22:
+Kappa di Cohen: 0.1657
+Spearman: -0.6000
+Pearson: -0.3033
+Kendall-Tau: -0.6000
+
+Question 23:
+Kappa di Cohen: 0.0286
+Spearman: 0.0732
+Pearson: 0.3169
+Kendall-Tau: 0.0300
+
+Question 24:
+Kappa di Cohen: 0.0286
+Spearman: 0.1732
+Pearson: -0.0295
+Kendall-Tau: 0.1633
+
+Question 25:
+Kappa di Cohen: -0.1286
+Spearman: 0.2732
+Pearson: 0.3211
+Kendall-Tau: 0.2966
+
+Question 26:
+Kappa di Cohen: -0.0500
+Spearman: 0.1732
+Pearson: 0.1878
+Kendall-Tau: 0.1633
+
+Question 27:
+Kappa di Cohen: 0.0536
+Spearman: -0.2000
+Pearson: -0.2821
+Kendall-Tau: -0.2000
+
+Question 28:
+Kappa di Cohen: nan
+Spearman: 0.7732
+Pearson: 0.6937
+Kendall-Tau: 0.6966
+
+Question 29:
+Kappa di Cohen: -0.1286
+Spearman: -0.3000
+Pearson: -0.3996
+Kendall-Tau: -0.2000
+
+Question 30:
+Kappa di Cohen: -0.0250
+Spearman: 0.4000
+Pearson: 0.2966
+Kendall-Tau: 0.3333
+
+Question 31:
+Kappa di Cohen: 0.0400
+Spearman: 0.2732
+Pearson: 0.0547
+Kendall-Tau: 0.2966
+
+Question 32:
+Kappa di Cohen: -0.0171
+Spearman: 0.4464
+Pearson: 0.4513
+Kendall-Tau: 0.3933
+
+Question 33:
+Kappa di Cohen: 0.0429
+Spearman: 0.1000
+Pearson: 0.0179
+Kendall-Tau: 0.1333
+
+Question 34:
+Kappa di Cohen: -0.1071
+Spearman: -0.3732
+Pearson: -0.2182
+Kendall-Tau: -0.2966
+
+Question 35:
+Kappa di Cohen: 0.0171
+Spearman: 0.1000
+Pearson: -0.1307
+Kendall-Tau: 0.1333
+
+Question 36:
+Kappa di Cohen: 0.0250
+Spearman: -0.1000
+Pearson: 0.1193
+Kendall-Tau: -0.0667
+
+Question 37:
+Kappa di Cohen: -0.0714
+Spearman: -0.3000
+Pearson: 0.0014
+Kendall-Tau: -0.3333
+
+Question 38:
+Kappa di Cohen: 0.0286
+Spearman: -0.2732
+Pearson: -0.1218
+Kendall-Tau: -0.2966
+
+Question 39:
+Kappa di Cohen: 0.0536
+Spearman: -0.5000
+Pearson: -0.5000
+Kendall-Tau: -0.4667
+
+Question 40:
+Kappa di Cohen: -0.1250
+Spearman: -0.1000
+Pearson: 0.0125
+Kendall-Tau: -0.0667
+
+Question 41:
+Kappa di Cohen: -0.0571
+Spearman: -0.1000
+Pearson: -0.0071
+Kendall-Tau: -0.0667
+
+Question 42:
+Kappa di Cohen: -0.0143
+Spearman: -0.2000
+Pearson: -0.1529
+Kendall-Tau: -0.2000
+
+Question 43:
+Kappa di Cohen: 0.1143
+Spearman: 0.0000
+Pearson: -0.2369
+Kendall-Tau: 0.0667
+
+Question 44:
+Kappa di Cohen: -0.0500
+Spearman: -0.1000
+Pearson: 0.2763
+Kendall-Tau: -0.0667
+
+Question 45:
+Kappa di Cohen: 0.0836
+Spearman: -0.1000
+Pearson: -0.1407
+Kendall-Tau: -0.0667
+
+Question 46:
+Kappa di Cohen: -0.0971
+Spearman: 0.0000
+Pearson: 0.0943
+Kendall-Tau: 0.0667
+
+Question 47:
+Kappa di Cohen: 0.0000
+Spearman: -0.4000
+Pearson: -0.3925
+Kendall-Tau: -0.3333
+
+Question 48:
+Kappa di Cohen: -0.0714
+Spearman: -0.6000
+Pearson: -0.8692
+Kendall-Tau: -0.4667
+
+Question 49:
+Kappa di Cohen: 0.1714
+Spearman: -0.0268
+Pearson: -0.1813
+Kendall-Tau: 0.0300
+
+Question 50:
+Kappa di Cohen: -0.0714
+Spearman: -0.2000
+Pearson: -0.2073
+Kendall-Tau: -0.2000
+
+Question 51:
+Kappa di Cohen: -0.1114
+Spearman: 0.1732
+Pearson: 0.0785
+Kendall-Tau: 0.1633
+
+Question 52:
+Kappa di Cohen: 0.0250
+Spearman: -0.4000
+Pearson: -0.3897
+Kendall-Tau: -0.3333
+
+Question 53:
+Kappa di Cohen: 0.0786
+Spearman: -0.3732
+Pearson: -0.3699
+Kendall-Tau: -0.2966
+
+Question 54:
+Kappa di Cohen: 0.0536
+Spearman: 0.0000
+Pearson: -0.0022
+Kendall-Tau: 0.0667
+
+Question 55:
+Kappa di Cohen: 0.1300
+Spearman: -0.2000
+Pearson: -0.2723
+Kendall-Tau: -0.2000
+
+Question 56:
+Kappa di Cohen: 0.0429
+Spearman: -0.4732
+Pearson: -0.0973
+Kendall-Tau: -0.4300
+
+Question 57:
+Kappa di Cohen: 0.0400
+Spearman: 0.7000
+Pearson: 0.2453
+Kendall-Tau: 0.6000
+
+Question 58:
+Kappa di Cohen: 0.1500
+Spearman: -0.5000
+Pearson: -0.1938
+Kendall-Tau: -0.4667
+
+Question 59:
+Kappa di Cohen: 0.0321
+Spearman: 0.0268
+Pearson: 0.2011
+Kendall-Tau: -0.0300
+
+Question 60:
+Kappa di Cohen: 0.2671
+Spearman: -0.4732
+Pearson: -0.6077
+Kendall-Tau: -0.4300
 

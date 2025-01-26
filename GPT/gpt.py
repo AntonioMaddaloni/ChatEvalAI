@@ -6,13 +6,13 @@ import os
 load_dotenv()
 
 #Config OpenAI
-client = OpenAI(api_key="g4a-96vBKjQ1Zhwesf9U5r7OSPgRv1miGsykNQm", base_url="https://api.gpt4-all.xyz/v1")
+client = OpenAI(api_key="")
 
 #Return Simple Response By User
 def response_by_user(message):
     #def response
     response = client.chat.completions.create(
-        model="gpt-4o-mini",
+        model="gpt-4o",
         messages=[{"role": "user", "content": message}],
         stream=False,
     )
